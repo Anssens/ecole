@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- somaire css -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- regle commune -->
+    <link rel="stylesheet" href="regles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sigmar&display=swap" rel="stylesheet">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    
+
+</head>
+<body>
+    <script>
+        let burgerBtn = document.querySelector('.burger-menu');
+let navA = document.querySelector('.nav-a');
+
+burgerBtn.addEventListener("click", () => {
+    navA.classList.toggle('active')
+})
+    </script>
+    
+    <header>
+        <nav>
+
+            <div class="nav-title">
+                <a href="index.html" style="text-decoration: none; color: white; font-size: 30px;">LaSenn</a>
+            </div>
+
+            <div class="burger-menu">
+                <a href="" style="color: white; text-decoration: none;"><i class='bx bx-menu'></i></a>
+            </div>
+
+            <div class="nav-a">
+
+                <div class="dropdown">
+                    <a href="" id="btn-a">Especes <i class='bx bx-chevron-right' ></i></a>
+                    <div class="dropdown-content">
+                        <a href="carangue.html">Carangue</a>
+                        <a href="pagre.html">Pagre</a>
+                        <a href="thon.html">Thon</a>
+                    </div>
+                </div>
+                
+                <a>A propos</a>
+                <a>Contact</a>
+
+            </div>
+            
+        </nav>
+    </header>
+    <section>
+        <div class="man-txt">
+            <h1 style="text-transform: uppercase;">DéCOUVREZ DèS <br>MAINTENANT LA VIE <br>MARIne. </h1>
+            <p>Prenez votre masque, et explorer ! <br>
+            </p>
+            <a href="carangue.html">Embarquez</a>
+        </div>
+        <div class="parent">
+            <div class="main-especes">
+                <img src="Caranx-melampygus-Reunion-Island 1.png" alt="" style="width: 50px; height: 50px; border-radius: 50%;">
+                <img src="pf-9f89f46c--PAGRE-ROSE 1.png" alt="" style="width: 50px; height: 50px; border-radius: 50%;">
+                <img src="thon-poisson 1.png" alt="" style="width: 50px; height: 50px; border-radius: 50%;">
+                <p>+ 2 espèces de poissons</p>
+            </div>
+            <div class="main-p">
+                <p>Nous voulons faire connaitre des poissons que vous pourriez rencontrez lors de vos prochaines plongées.</p>
+            </div>
+        </div>
+        
+    </section>
+
+</body>
+</html>

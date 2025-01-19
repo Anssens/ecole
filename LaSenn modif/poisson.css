@@ -1,0 +1,383 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #151A4A;
+    color: white;
+}
+header{
+    margin-top: 22px;
+    height: 100px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #151A4A;
+    text-align: center;
+}
+.nav-title{
+    margin-left: 70px;
+}
+.nav-a{
+    display: flex;
+    margin-right: 70px;
+    justify-content: space-evenly;
+    gap: 70px;
+}
+.dropdown-content{
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    color: black;
+    margin-top: 10px;
+}
+.dropdown-content a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    display: none;
+    position: sticky;
+
+}
+.dropdown:hover .dropdown-content a{
+    display: block;
+}
+.dropdown-content a:hover{
+    background-color: #f1f1f1;
+}
+ .dropdown #btn-a {
+    text-decoration: none;
+    color: white;
+
+}
+main{
+    text-align: center;
+}
+main img{
+    border-radius: 20px;
+    margin: 20px 0;
+    max-width: 100%;
+}
+
+.main-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap; /* Pour rendre responsive */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+section{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+
+/* mode de vie */
+
+
+.container-circles{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20%;
+    justify-content: center;
+    padding: 5% 0;
+
+}
+.mode-circle {
+    background: #000;
+    border-radius:  50%;
+    width:  120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+.infos_supp{
+    min-height: 85vh;
+}
+.habitat{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.habitat h2{
+    text-align: left;
+}
+.habitat-p{
+    display: flex;
+    justify-content: space-between;
+}
+.habitat-p p{
+    width: 800px;
+}
+
+
+.espece_section_cards_text{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.espece_section-p{
+    display: flex;
+    justify-content: right;
+    text-align: right;
+}
+.cards{
+    position: relative;
+}
+.cards img{
+    width: 250px;
+    height: auto;
+}
+.cards h1{
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin: 10px 0;
+}
+.cards p{
+    font-size: 12px;
+    width: 250px;
+}
+.parent2{
+    display: flex;
+}
+
+
+table{
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px solid #000;
+    text-align: center;
+    margin-top: 100px;
+}
+th, td{
+    border: 2px solid #000;
+    padding: 10px;
+    width: 120px;
+}
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 50vh;
+}
+.contact_div2{
+    display: flex;
+    flex-direction: column;
+}
+.contact_div2 input{
+    border: #fff;
+    padding: 15px 30px;
+    border-radius: 30px;
+}
+button{
+    background-color: #2f00ff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    width: 150px;
+    text-align: center;
+}
+footer{
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+}
+.footer-parent-1{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.footer-div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+.footer-div p{
+    border-left: 5px solid #000;
+    padding-left: 5px;
+}
+.footer-div a{
+    text-decoration: none;
+    color: black;
+}
+.socials a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.socials i{
+    background: #4B8AFF;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 15px;
+}
+
+@media (max-width: 1400px) {
+    section {
+        max-width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-title {
+        margin-left: 50px;
+    }
+    .nav-a {
+        margin-right: 50px;
+        gap: 50px;
+    }
+    p{
+        width: 500px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .main-img {
+    }
+    .mode-circle {
+        width: 100px;
+        height: 100px;
+        padding: 80px;
+        object-fit: contain;
+    }
+    .cards img {
+        width: 200px;
+    }
+    .cards p {
+        width: 200px;
+    }
+    th, td {
+        width: 100px;
+    }
+    .habitat-p{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .contact{
+
+    }
+    button {
+        width: 120px;
+    }
+    .footer-parent-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .more {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .more img{
+        width: 500px;
+    }
+    .more p{
+        width: 500px;
+        text-align: center;
+    }
+    .parent2{
+        flex-direction: column;
+        align-items: center;
+    }
+    .espece_section_cards_text{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1068px) {
+    .habitat p{
+        width: 400px;
+    }
+    main img{
+        width: 300px;
+    }
+    .nav-title {
+        margin-left: 30px;
+    }
+    .nav-a {
+        margin-right: 30px;
+        gap: 30px;
+    }
+    .mode-circle {
+        width: 80px;
+        height: 80px;
+    }
+    .cards img {
+        width: 150px;
+    }
+    .cards p {
+        width: 150px;
+    }
+    th, td {
+        width: 80px;
+        padding: 8px;
+    }
+    .contact_div2 input {
+        padding: 10px 20px;
+    }
+    button {
+        width: 100px;
+        padding: 10px 20px;
+    }
+}
+@media (max-width: 768px) {
+    .habitat-p {
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    .nav-title {
+        margin-left: 20px;
+    }
+    .nav-a {
+        margin-right: 20px;
+        gap: 20px;
+    }
+    .main-img {
+        gap: 0.5rem;
+    }
+    .mode-circle {
+        width: 60px;
+        height: 60px;
+    }
+    .cards img {
+        width: 100px;
+    }
+    .cards p {
+        width: 100px;
+    }
+    th, td {
+        width: 60px;
+        padding: 6px;
+    }
+    .contact_div2 input {
+        padding: 8px 15px;
+    }
+    button {
+        width: 80px;
+        padding: 8px 15px;
+    }
+}

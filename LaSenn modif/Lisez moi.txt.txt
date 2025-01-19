@@ -1,0 +1,7 @@
+Le site web est quasiment fini, cependant, il y a des points à relever :
+
+- la responsive qui aurait pu être mieux, mais qui est difficile à coder, et donc le résultat n'est pas là
+- manque d'animation, rencontre de difficulté à les coder
+- pour mettre les images dans un dossiers et faire un chemin pour y acceder ne fonctioonait si seulement j'ouvre la page depuis mon editeur de code
+
+J'ai réussi à faire en sorte que l'on peut naviguer entre les pages, respect de la consigne (pour le contenu), en ayant mis des tableau, images, textes,..
