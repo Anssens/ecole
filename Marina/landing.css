@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #f1f1f1f1;
+    min-height: 100vh;
+    position: relative;
+    font-family: "Poppins", serif;
+}
+
+#main-image{
+    width: 100%;
+    height: 75vh;
+    object-fit: cover;
+}
+main{
+    background: url(fish-3322230_1920.jpg) no-repeat center center/cover;
+    min-height: 75vh;
+    width: 99%;
+    margin: 8px;
+    border-radius: 20px;
+    object-fit: cover;
+    position: relative;
+}
+.logo{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+.logo a{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav{
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    z-index: 1000;
+}
+ul{
+    display: flex;
+    list-style: none;
+    padding: 20px;
+    gap: 20px;
+    position: relative;
+}
+ul a{
+    color: #fff;
+    text-decoration: none;
+}
+ul li{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: width .2s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+/*
+animation retiré
+
+ul li::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 5px;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    transition: all .2s ease-in-out;
+}
+ul li:hover::before{
+    width: 100%;
+} */
+nav .dropbtn{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.dropdown{
+    position: relative;
+    transition: all .2s ease-in;
+}
+.dropdown-content{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: #f1f1f1;
+    gap: 10px;
+    width: 170px;
+    padding: 0.2rem;
+    border-radius: 7px;
+    display: none;
+}
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+.dropdown-content a{
+    height: 100%;
+    padding: 1rem 2rem 1rem 0.8rem;
+    text-align: left;
+    border-radius: 7px;
+    color: black;
+
+}
+.dropdown-content a:hover{
+    background: #dfdfdf;
+}
+
+.main-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.main-title h1{
+    color: #fff;
+    letter-spacing: 5px;
+    font-size: 5rem;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: "Anton", serif;
+}
+.main-title p{
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 10px;
+}
+.button-page{
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+    gap: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.button-page a{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background: #fff;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 30px;
+    transition: all .3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+.button-page #btn1{
+    flex: 2;
+    background: transparent;
+    border: 2px solid #fff;
+    color: white;
+}
+
+.button-page #btn1 i{
+    border-radius: 50%;
+    background: #000;
+    padding: 7px;
+    color: #fff;
+    font-size: 1rem;
+    margin-left: 10px;     
+}
+.button-page #btn1:hover{
+    transform: translateY(-5px);
+    transition: all .3s ease-in-out;
+}
+.button-page #btn1:hover i{
+    background: #fff;
+    color: #000;
+    transition: all .25s ease-in-out;
+}
+
+.button-page #btn2 i{
+    border-radius: 50%;
+    background: #000;
+    padding: 7px;
+    color: #fff;
+    position: absolute;
+    right: -100%;
+    opacity: 0;
+    font-size: 1rem;
+}
+
+.button-page #btn2:hover i{
+    opacity: 1;
+    right: 10px;
+    transition: all .25s ease-in-out;
+}
+.button-page #btn2{
+    flex: 1;
+}
+.button-page a:hover:nth-last-child(1){
+    background: #baffa1;
+}
+.fish{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    min-height: 22vh;
+    gap: 10px;
+    width: 99%;
+    margin: 8px 8px 0 8px;
+    position: relative;
+}
+.fish .poisson1 {
+    background: url('f1.webp') center/cover no-repeat #000;
+    border-radius: 20px;
+    width: 100%;
+    height: 200px; /* Ajuste selon ton besoin */
+    position: relative;
+    overflow: hidden;
+}
+.fish .poisson2 {
+    background: url('f2.jpg') center/cover no-repeat #000;
+    border-radius: 20px;
+    width: 100%;
+    height: 200px; /* Ajuste selon ton besoin */
+    position: relative;
+    overflow: hidden;
+}
+.fish .poisson3 {
+    background: url('f3.jpg') center/cover no-repeat #000;
+    border-radius: 20px;
+    width: 100%;
+    height: 200px; /* Ajuste selon ton besoin */
+    position: relative;
+    overflow: hidden;
+}
+.fish h2{
+    text-transform: uppercase;
+    font-family: "Roboto", serif;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.discover-button a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    background: #fff;
+    padding: 10px 20px;
+    width: 30%;
+    border-radius: 30px;
+    transition: all .2s ease-in-out;
+    overflow: hidden;
+    position: absolute;
+    right: 1rem;
+    bottom: -100%;
+}
+.poisson{
+    transition: all .2s ease-in-out;
+
+}
+.poisson:hover{
+    cursor: pointer;
+}
+.poisson:hover a{
+    bottom: 10px;
+}
+
+.discover-button i{
+    border-radius: 50%;
+    background: #000;
+    padding: 7px;
+    color: #fff;
+    z-index: 1000;
+    font-size: 1rem;
+}
+.fish:has(.poisson:hover) .poisson:where(:not(:hover)) {
+    position: relative;
+    transform: scale(0.97); /* Augmente la taille des autres divs */
+    opacity: 0.8;
+}
