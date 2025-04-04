@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thon - Bento Design</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="bento-thon.css">
+
+    <!-- icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <main>
+        <header>
+        <!-- <img src="fish-3322230_1920.jpg" alt="" id="main-image"> -->
+        <nav>
+            <div class="logo"><a href="landing.html"><h2>Marina</h2></a></div>
+            <ul class="menu" id="menu">
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Especes <i class='bx bx-chevron-down' style='color:#ffffff' ></i></a>
+                    <div class="dropdown-content">
+                        <a href="carangue-bento.html">Carangue</a>
+                        <a href="pagre-bento.html">Pagre</a>
+                        <a href="#">Thon</a>
+                    </div>
+                </li>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+        <div class="hero-container">
+
+            <!-- bento grid left -->
+            <div class="bento-product">
+                <!-- <div class="img">
+                    <img src="gs.jpg" alt="">
+                </div> -->
+                <div class="bento-product-icon">
+                    <i class='bx bx-anchor'></i>
+                </div>
+                <div class="bento-product-text">
+                    <h1>Thon</h1>
+                    <p>C’est également l'un des rares poissons à avoir le sang chaud, et l’une des espèces les plus rapides au monde.
+                        Le thon rouge du Nord est un poisson pélagique. Il est présent dans l’Atlantique Nord, la Méditerranée, le sud de la mer Noire et parfois la mer Baltique.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- middle left -->
+            <div class="bento-details-left_top">
+                <div class="details-infos-card">    
+                    <h4>Régime</h4>
+                    <h2>Carnivore</h2>
+                </div>
+                <div class="details-infos-card">
+                    <h4>Sociabilité</h4>
+                    <h2>En banc
+                    </h2>
+                </div>
+                <div class="details-infos-card">
+                    <h4>Territorialité</h4>
+                    <h2>Non</h2>
+                </div>
+                <div class="details-infos-card">
+                    <h4>Rythme Biologique</h4>
+                    <h2>Diurne</h2>
+                </div>
+                <div class="details-infos-card">
+                    <h4>Taille <span>Max</span></h4>
+                    <h2>400cm</h2>
+                </div>
+                <div class="details-infos-card">
+                    <h4>Taille <span>Min</span></h4>
+                    <h2>250cm
+                    </h2>
+                </div> 
+                
+            </div> 
+
+            <!-- middle right -->
+            <div class="bento-details-right-slider_top">
+                <button class="sliders left" onclick="scrollProjects(-1)"><i class='bx bxs-left-arrow'></i></button>
+                <button class="sliders right" onclick="scrollProjects(1)"><i class='bx bxs-right-arrow'></i></button>
+                <div class="details-infos-text1 txt active">Le thon rouge de l'Atlantique est un grand migrateur qui peut tolérer un vaste éventail de températures. La population de thon rouge de l'Atlantique Ouest s'alimente pendant l'été dans les eaux canadiennes de l'Atlantique
+                </div>
+                    <!-- display none by default -->
+                <div class="details-infos-text2 txt" >Vous pourrez donc profiter de vos voyages de pêche exotique pour vous initier à la pêche de la carangue.
+                    et migre vers le sud pendant les mois d'hiver dans le golfe du Mexique où se situent leur frayère et leur habitat de grossissement.</div>
+            </div>    
+                    
+            <!-- right -->
+            <div class="bento-details bottom">
+                <div class="bento-details-fish1 fish_bottom">
+                    <div class="fish-img">
+                        <img src="ppp.jpg" alt="">
+                    </div>
+                    <div class="fish-text">
+                        <h1>Thon jaune</h1>
+                        <p>Le corps est argenté, avec des reflets bleus et une ligne jaune. Le dos est de couleur bleu foncé métallique.
+
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="bento-details-fish2 fish_bottom">
+                    <div class="fish-img">
+                        <img src="image.webp" alt="">
+                    </div>
+                    <div class="fish-text">
+                        <h1>Thon rouge</h1>
+                        <p>Le thon rouge du Nord est la plus grande espèce de thon. 
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>    
+                
+        </div>
+    </main>
+    <div class="caca" style="width: 1400px; background: #000;"></div>
+
+      <!-- Script pour gérer les slides -->
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.bento-details-right-slider_top .txt');
+
+    function scrollProjects(direction) {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + direction + slides.length) % slides.length;
+        slides[currentSlide].classList.add('active');
+    }
+
+  </script>
+
+</body>
+</html>

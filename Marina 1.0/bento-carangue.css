@@ -1,0 +1,406 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* glassmorphism effect */
+/*  background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+
+body{
+    color: white;
+    font-family: "Poppins", serif;
+    background: url(jellyfish-275576_1920.jpg) center center no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+
+.logo{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+.logo a{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav{
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    z-index: 1000;
+}
+ul{
+    display: flex;
+    list-style: none;
+    padding: 20px;
+    gap: 20px;
+    position: relative;
+}
+ul a{
+    color: #fff;
+    text-decoration: none;
+}
+ul li{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: width .2s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+/*
+animation retiré
+
+ul li::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 5px;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    transition: all .2s ease-in-out;
+}
+ul li:hover::before{
+    width: 100%;
+} */
+nav .dropbtn{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.dropdown{
+    position: relative;
+    transition: all .2s ease-in;
+}
+.dropdown-content{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: #f1f1f1;
+    gap: 10px;
+    width: 170px;
+    padding: 0.2rem;
+    border-radius: 7px;
+    display: none;
+}
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+.dropdown-content a{
+    height: 100%;
+    padding: 1rem 2rem 1rem 0.8rem;
+    text-align: left;
+    border-radius: 7px;
+    color: black;
+
+}
+.dropdown-content a:hover{
+    background: #dfdfdf;
+}
+
+
+
+
+
+/* main{
+    background: linear-gradient(#6487ff,#152e74,#081332);
+    min-height: 100vh;
+}
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }  */
+
+h4{
+    font-family: "Roboto", serif;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+h2{
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-size: 2rem;
+}
+span{
+    color: #0381ff;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.hero-container{
+    border-radius: 20px;
+    max-width: 100%;
+    width: 1400px;
+    height: 80vh;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    padding: 1rem;
+    backdrop-filter: blur( 1.5px );
+    background: rgba( 255, 255, 255, 0.01 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+}
+
+/* jsp pk, mais le text s'affiche correctement Ssi : */
+.bento-product{
+    background: url(portal-2163759_640.jpg);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    position: relative;
+}
+.bento-product-icon{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+}
+
+.bento-product-text{
+    padding: 3rem;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.bento-details-container{
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    border-radius: 20px;
+    row-gap: 10px;
+}
+.bento-details.top{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 10px;
+}
+
+.bento-details.top .bento-details-left_top{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.bento-details-left_top .details-infos-card:hover{
+    background: rgba( 255, 255, 255, 0.15 );
+    transform: skewY(2deg);
+}
+.bento-details.top .bento-details-left_top > * {
+    background: rgba( 255, 255, 255, 0.07 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+    border-radius: 10px;
+    border: 2px solid rgba( 255, 255, 255, 0.18 );
+    position: relative;
+}
+
+.bento-details-left_top .details-infos-card{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+.bento-details.bottom > .fish_bottom{
+    position: relative;
+}
+.bento-details-left_top{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.bento-details-left_top .details-infos-card:hover{
+    background: rgba( 255, 255, 255, 0.15 );
+    transform: skewY(2deg);
+}
+.bento-details-left_top > * {
+    background: rgba( 255, 255, 255, 0.07 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+    border-radius: 10px;
+    border: 2px solid rgba( 255, 255, 255, 0.18 );
+    position: relative;
+}
+
+.bento-details-left_top .details-infos-card{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+
+
+
+
+.bento-details-right-slider_top{
+    background: #000000;
+    position: relative;
+}
+.bento-details-right-slider_top button{
+    background: transparent;
+    border: none;
+    z-index: 10; /* ✅ Les boutons passent DEVANT le texte */
+}
+.bento-details-right-slider_top button:hover i{
+    background: rgb(255, 255, 255);
+}
+.bento-details-right-slider_top .sliders.left{   
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+}
+.bento-details-right-slider_top .sliders.right{   
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+}
+.bento-details-right-slider_top i{
+    padding: 0.5rem;
+    background: rgba(255, 255, 255, 0.445);
+    border-radius: 50%;
+    border: none;
+    font-size: 1.5rem;
+    transition: all .2s ease-in;
+}
+.bento-details-right-slider_top .sliders.left{   
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+}
+.bento-details-right-slider_top .sliders.right{   
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+}
+.txt span{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.7rem;
+}
+.txt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;  /* Bloque l'interaction quand pas actif */
+    transition: opacity 0.5s ease;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    padding: 3rem;
+    z-index: 1; /* ✅ Le texte passe SOUS les boutons */
+    flex-direction: column;
+}
+
+.txt.active {
+    opacity: 1;
+    pointer-events: auto; /* ✅ Active l'interaction seulement si visible */
+}
+
+
+.bento-details.bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+
+.fish_bottom{
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+
+}
+
+.fish_bottom .img {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Assure que le conteneur a une hauteur définie */
+    overflow: hidden; /* Empêche l'image de dépasser */
+    padding: 0.5rem;
+    
+}
+
+.fish_bottom img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%; /* Fait en sorte que l'image prenne toute la hauteur */
+    object-fit: cover; /* Assure que l'image couvre bien la div sans déformation */
+    position: absolute; /* Permet de bien caler l'image */
+    top: 0;
+    left: 0;
+    filter: brightness(0.9);
+    transition: all .2s ease-in-out;
+    border: 4px solid rgba( 255, 255, 255, 0.25 );
+
+}
+.fish_bottom:hover img{
+    filter: brightness(0.6);
+    transform: scale(1.01);
+}
+.fish-text{
+    position: absolute;
+    top: 40%;
+    left: 0.5rem;
+    padding: 0 1.5rem;
+    row-gap: 0.8rem;
+    display: flex;
+    flex-direction: column;
+}
+.fish-text h1{
+    font-size: 1.5rem;
+}
+.fish-text p{
+    font-size: 0.8rem;
+}
